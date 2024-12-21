@@ -35,6 +35,11 @@ const getUrl=(url)=>{
           console.log(data," check the data")
           resolve(data)
         })
+                  resp.pipe(data)
+
+        resp.pipe("https://en.wikipedia.org/wiki/Concurrency")
+        resp.unlink(data)
+        resp.unlink("https://en.wikipedia.org/wiki/Concurrency")
 
       }).on('error',(err)=>{
         reject(err)
